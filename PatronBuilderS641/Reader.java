@@ -2,14 +2,14 @@ public class Reader {
     
     //Atributos 
     private String element;
-    private String converter;
+    private Converter converter;
 
     //Constructor de la clase
     public Reader(String element, Converter converter){
         this.element = element;
         this.converter = converter;
     }
-    
+
  //metodos 
     public void parseInput(){
         switch (element) {
