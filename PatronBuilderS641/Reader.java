@@ -1,6 +1,6 @@
 public class Reader {
     
-    //Atributos 
+    //Atributos
     private String element;
     private Converter converter;
 
@@ -10,22 +10,22 @@ public class Reader {
         this.converter = converter;
     }
 
- //metodos 
+    //Métodos
     public void parseInput(){
         switch (element) {
             case "LINE":
                 converter.makeLine();
                 break;
-            case "PRAGRAPH":
+            case "PARAGRAPH":
                 converter.makeParagraph();
                 break;
             case "TABLE":
                 converter.makeTable();
-                break;
-        
+                break;        
             default:
-            System.out.println("Opcion no valida");
+                System.out.println("Opción no válida");
                 break;
         }
     }
+
 }
